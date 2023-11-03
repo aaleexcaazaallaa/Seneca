@@ -11,11 +11,11 @@ class HomeScreen extends StatelessWidget
     (
       appBar: AppBar
       (
-        title: const Text('Segunda Pantalla'),
+        title: const Text('HOME SCREEN'),
       ),
       body: const Center
       (
-        child: Text('¡Has iniciado sesión con éxito!'),
+        child: Text('Prueba'),
       ),
     );
   }

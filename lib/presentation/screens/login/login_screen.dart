@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:seneca/presentation/screens/home/home_screen.dart';
 
@@ -19,7 +17,8 @@ class _LoginScreen extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 31, 77, 184),
-      body: Center(
+      body: SingleChildScrollView(
+        child: Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
@@ -154,22 +153,28 @@ class _LoginScreen extends State<LoginScreen> {
                   decorationThickness: 2.0
                 )
               ),
+              const SizedBox(height: 20),
 
-              //Image.file(File('images/JuntaAndalucia.png')),
-              const SizedBox(height: 240),
+              Transform.scale(
+                scale: 0.675,
+                child: Image.asset("assets/images/JuntaAndalucia.png")
+                ),
+              const SizedBox(height: 120),
 
-              //Container(
-                //margin: const EdgeInsetsDirectional.only(start: 300),
-                //hild: const Text("v11.3.0", style: TextStyle(
-                  //color: Colors.white,
-                  //fontWeight: FontWeight.bold
-                //))
-              //)
+              Container(
+                margin: const EdgeInsetsDirectional.only(start: 300),
+                child: const Text("v11.3.0", style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold
+                )
+              )
+            )
 
             ],
           ),
         ),
       ),
+      )
     );
   }
 }
