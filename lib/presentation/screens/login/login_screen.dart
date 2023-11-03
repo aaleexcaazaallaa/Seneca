@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:seneca/presentation/screens/home/home_screen.dart';
+import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
+import 'package:seneca/presentation/providers/provider.dart';
 
 class LoginScreen extends StatefulWidget  {
   const LoginScreen({super.key});
@@ -15,6 +17,7 @@ class _LoginScreen extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final provider = context.watch<AppProvider>();
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 31, 77, 184),
       body: SingleChildScrollView(
@@ -24,10 +27,11 @@ class _LoginScreen extends State<LoginScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              const SizedBox(height: 60),
-              const Text("iSéneca", 
-                style: TextStyle(fontSize: 70, color: Colors.white, fontWeight: FontWeight.w700),
-              ),
+              const SizedBox(height: 80),
+              Transform.scale(
+                scale: 1.10,
+                child: Image.asset("assets/images/SenecaLogo.png")
+                ),
               const SizedBox(height: 20),
               TextField(
                 cursorColor: Colors.white,
@@ -36,7 +40,7 @@ class _LoginScreen extends State<LoginScreen> {
                 (
                   filled: true,
                   fillColor: Colors.white.withOpacity(0.15),
-                  hintText: "Usuario",
+                  hintText: "Usuario/a",
                   hintStyle: const TextStyle
                   (
                     color: Colors.white
@@ -120,13 +124,9 @@ class _LoginScreen extends State<LoginScreen> {
                 height: 60,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute
-                      (
-                        builder: (context) => const HomeScreen(),
-                      ),
-                    );
+                    if(provider.comprobarLogin(usernameController.text, passwordController.text)){
+                      context.goNamed('home');
+                    }
                   },
                   style: ButtonStyle(
                     backgroundColor: const MaterialStatePropertyAll(Colors.white),
@@ -159,7 +159,7 @@ class _LoginScreen extends State<LoginScreen> {
                 scale: 0.675,
                 child: Image.asset("assets/images/JuntaAndalucia.png")
                 ),
-              const SizedBox(height: 120),
+              const SizedBox(height: 100),
 
               Container(
                 margin: const EdgeInsetsDirectional.only(start: 300),
