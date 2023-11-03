@@ -156,7 +156,7 @@ class _LoginScreen extends State<LoginScreen> {
               const SizedBox(height: 20),
 
               Transform.scale(
-                scale: 0.675,
+                scale: 0.50,
                 child: Image.asset("assets/images/JuntaAndalucia.png")
                 ),
               const SizedBox(height: 100),
