@@ -36,6 +36,7 @@ class _LoginScreen extends State<LoginScreen> {
               TextField(
                 cursorColor: Colors.white,
                 controller: usernameController,
+                style: const TextStyle(color: Colors.white),
                 decoration: InputDecoration
                 (
                   filled: true,
@@ -72,6 +73,7 @@ class _LoginScreen extends State<LoginScreen> {
               TextField(
                 cursorColor: Colors.white,
                 controller: passwordController,
+                style: const TextStyle(color: Colors.white),
                 decoration: InputDecoration
                 (
                   filled: true,
@@ -142,16 +144,32 @@ class _LoginScreen extends State<LoginScreen> {
               ),
               const SizedBox(height: 60),
 
-              const Text("No recuerdo la contraseña", 
-                style: TextStyle(
-                  fontSize: 16, 
-                  color: Colors.white, 
-                  fontWeight: FontWeight.bold, 
-                  decoration: TextDecoration.underline,
-                  decorationColor:Colors.white,
-                  decorationStyle: TextDecorationStyle.solid,
-                  decorationThickness: 2.0
-                )
+              RichText(
+                text: TextSpan(
+                  children:[
+                    const TextSpan(
+                      text: "No recuerdo mi contraseña",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.none, // Desactiva la decoración predeterminada
+                      ),
+                    ),
+                    const WidgetSpan(
+                      child: SizedBox(width: 4.0), // Añade separación horizontal
+                    ),
+                    WidgetSpan(
+                      child: Container(
+                        margin: const EdgeInsets.only(top: 2.0), // Ajusta la posición vertical de la línea de subrayado
+                        width: 200, // Ancho completo
+                        height: 2.0, // Grosor de la línea de subrayado
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+                textAlign: TextAlign.center,
               ),
               const SizedBox(height: 20),
 
