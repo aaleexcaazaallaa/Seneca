@@ -153,7 +153,6 @@ class _LoginScreen extends State<LoginScreen> {
                         fontSize: 16,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        decoration: TextDecoration.none, // Desactiva la decoración predeterminada
                       ),
                     ),
                     const WidgetSpan(

@@ -17,15 +17,15 @@ class HomeScreen extends StatelessWidget
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              const SizedBox(height: 40),
+              const SizedBox(height: 20),
               Transform.scale(
-                scale: 1.10,
-                child: Image.asset("assets/images/SenecaLogo.png")
-                ),
+                scale: 0.90,
+                child: Image.asset("assets/images/SenecaLogoSegundaPantalla.png")
+              ),
             ]
           )
-        )
-      ))
+        ))
+      )
     );
   }
 }

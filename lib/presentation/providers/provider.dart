@@ -9,6 +9,6 @@ class AppProvider extends ChangeNotifier{
   {
     user = usuario;
     password = contrasena;
-    return usuario != "" && password != "";
+    return usuario != "" && usuario == "x" && password != "" && password == "x";
   }
 }
