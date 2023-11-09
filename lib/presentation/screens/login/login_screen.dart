@@ -142,7 +142,28 @@ class _LoginScreen extends State<LoginScreen> {
                   style: TextStyle(fontSize: 16, color: Color.fromARGB(255, 31, 77, 188))),
                 ),
               ),
-              const SizedBox(height: 60),
+              const SizedBox(height: 10),
+
+              SizedBox(
+                width: 380,
+                height: 40,
+                child: ElevatedButton(
+                  onPressed: () {
+                    context.goNamed('sign-in');
+                  },
+                  style: ButtonStyle(
+                    backgroundColor: const MaterialStatePropertyAll(Colors.white),
+                    shape: MaterialStatePropertyAll(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0)
+                      )
+                    )
+                  ),
+                  child: const Text('Entrar con google',
+                  style: TextStyle(fontSize: 16, color: Color.fromARGB(255, 31, 77, 188))),
+                ),
+              ),
+              const SizedBox(height: 20),
 
               RichText(
                 text: TextSpan(
@@ -176,7 +197,7 @@ class _LoginScreen extends State<LoginScreen> {
                 scale: 0.50,
                 child: Image.asset("assets/images/JuntaAndalucia.png")
                 ),
-              const SizedBox(height: 100),
+              const SizedBox(height: 90),
 
               Container(
                 margin: const EdgeInsetsDirectional.only(start: 300),

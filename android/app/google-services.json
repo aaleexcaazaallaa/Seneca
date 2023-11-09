@@ -1,0 +1,206 @@
+{
+  "project_info": {
+    "project_number": "800276532765",
+    "project_id": "isenecafirebasealejandro",
+    "storage_bucket": "isenecafirebasealejandro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800276532765:android:36c4a011ee69e02ce000f4",
+        "android_client_info": {
+          "package_name": "com.example.firebase_google_sign_in_tutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800276532765-cdb896vf42rf0v23e5tv1c98ie78bikh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebase_google_sign_in_tutorial",
+            "certificate_hash": "008e2bf542a79e9b8658f5e1ea981b9676fa78b0"
+          }
+        },
+        {
+          "client_id": "800276532765-g96fj6v23jbgdfvamn2qhj7js0b3hceq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAIXHqPv7cQ7-VVPT7BAvQhI4eT1Q0qZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800276532765-g96fj6v23jbgdfvamn2qhj7js0b3hceq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "800276532765-19rc2l0othgk3d0j63ioflrquehn7056.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.googleSigningPruebaFinal.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800276532765:android:414dbdafd2c650e6e000f4",
+        "android_client_info": {
+          "package_name": "com.example.google_signing_prueba_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800276532765-78g220lr086bisvro5rndjtckhgn0c7s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.google_signing_prueba_final",
+            "certificate_hash": "008e2bf542a79e9b8658f5e1ea981b9676fa78b0"
+          }
+        },
+        {
+          "client_id": "800276532765-g96fj6v23jbgdfvamn2qhj7js0b3hceq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAIXHqPv7cQ7-VVPT7BAvQhI4eT1Q0qZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800276532765-g96fj6v23jbgdfvamn2qhj7js0b3hceq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "800276532765-19rc2l0othgk3d0j63ioflrquehn7056.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.googleSigningPruebaFinal.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800276532765:android:e5ec815ed6ab262ee000f4",
+        "android_client_info": {
+          "package_name": "com.example.kk_login_con_google"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800276532765-g96fj6v23jbgdfvamn2qhj7js0b3hceq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAIXHqPv7cQ7-VVPT7BAvQhI4eT1Q0qZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800276532765-g96fj6v23jbgdfvamn2qhj7js0b3hceq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "800276532765-19rc2l0othgk3d0j63ioflrquehn7056.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.googleSigningPruebaFinal.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800276532765:android:62dfd991614d9e70e000f4",
+        "android_client_info": {
+          "package_name": "com.example.seneca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800276532765-g96fj6v23jbgdfvamn2qhj7js0b3hceq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAIXHqPv7cQ7-VVPT7BAvQhI4eT1Q0qZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800276532765-g96fj6v23jbgdfvamn2qhj7js0b3hceq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "800276532765-19rc2l0othgk3d0j63ioflrquehn7056.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.googleSigningPruebaFinal.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800276532765:android:bf5e3b0a0c1db757e000f4",
+        "android_client_info": {
+          "package_name": "com.example.tarea1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800276532765-g96fj6v23jbgdfvamn2qhj7js0b3hceq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAIXHqPv7cQ7-VVPT7BAvQhI4eT1Q0qZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800276532765-g96fj6v23jbgdfvamn2qhj7js0b3hceq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "800276532765-19rc2l0othgk3d0j63ioflrquehn7056.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.googleSigningPruebaFinal.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
