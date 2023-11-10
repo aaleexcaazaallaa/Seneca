@@ -1,7 +1,9 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:seneca/presentation/providers/provider.dart';
+import 'package:seneca/services/firebase_service.dart';
 
 class LoginScreen extends StatefulWidget  {
   const LoginScreen({super.key});
@@ -148,8 +150,9 @@ class _LoginScreen extends State<LoginScreen> {
                 width: 380,
                 height: 40,
                 child: ElevatedButton(
-                  onPressed: () {
-                    context.goNamed('sign-in');
+                  onPressed: () async{
+                    FirebaseService service = FirebaseService();
+                    await service.signInwithGoogle();
                   },
                   style: ButtonStyle(
                     backgroundColor: const MaterialStatePropertyAll(Colors.white),
