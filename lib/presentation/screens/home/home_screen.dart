@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:seneca/presentation/providers/provider.dart';
+import 'package:seneca/services/firebase_service.dart';
 
 class HomeScreen extends StatelessWidget 
 {
@@ -47,7 +48,7 @@ class HomeScreen extends StatelessWidget
                   IconButton(
                     color: const Color.fromARGB(255, 141, 141, 141),
                     onPressed: () {
-                      
+                      FirebaseService().signOutFromGoogle();
                     },
                     icon: const Icon(Icons.home),
                   ),
