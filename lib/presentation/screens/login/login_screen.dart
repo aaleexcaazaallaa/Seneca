@@ -156,17 +156,16 @@ class _LoginScreen extends State<LoginScreen> {
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.white,
-                        fontWeight: FontWeight.bold,
                       ),
                     ),
                     const WidgetSpan(
-                      child: SizedBox(width: 4.0), // Añade separación horizontal
+                      child: SizedBox(width: 4.0),
                     ),
                     WidgetSpan(
                       child: Container(
-                        margin: const EdgeInsets.only(top: 2.0), // Ajusta la posición vertical de la línea de subrayado
-                        width: 200, // Ancho completo
-                        height: 2.0, // Grosor de la línea de subrayado
+                        margin: const EdgeInsets.only(top: 2.0),
+                        width: 200,
+                        height: 2.0,
                         color: Colors.white,
                       ),
                     ),
