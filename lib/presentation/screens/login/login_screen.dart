@@ -1,9 +1,8 @@
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:seneca/utils/google_sign_in.dart';
 import 'package:provider/provider.dart';
 import 'package:seneca/presentation/providers/provider.dart';
-import 'package:seneca/services/firebase_service.dart';
 
 class LoginScreen extends StatefulWidget  {
   const LoginScreen({super.key});
@@ -23,7 +22,6 @@ class _LoginScreen extends State<LoginScreen> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 31, 77, 184),
       body: SingleChildScrollView(
-        child: Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
@@ -146,27 +144,9 @@ class _LoginScreen extends State<LoginScreen> {
               ),
               const SizedBox(height: 10),
 
-              SizedBox(
-                width: 380,
-                height: 40,
-                child: ElevatedButton(
-                  onPressed: () async{
-                    FirebaseService service = FirebaseService();
-                    await service.signInwithGoogle();
-                  },
-                  style: ButtonStyle(
-                    backgroundColor: const MaterialStatePropertyAll(Colors.white),
-                    shape: MaterialStatePropertyAll(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8.0)
-                      )
-                    )
-                  ),
-                  child: const Text('Entrar con google',
-                  style: TextStyle(fontSize: 16, color: Color.fromARGB(255, 31, 77, 188))),
-                ),
-              ),
-              const SizedBox(height: 20),
+              const GoogleSignIn(),
+
+              const SizedBox(height: 30),
 
               RichText(
                 text: TextSpan(
@@ -200,21 +180,17 @@ class _LoginScreen extends State<LoginScreen> {
                 scale: 0.50,
                 child: Image.asset("assets/images/JuntaAndalucia.png")
                 ),
-              const SizedBox(height: 90),
+              const SizedBox(height: 55),
 
               Container(
                 margin: const EdgeInsetsDirectional.only(start: 300),
                 child: const Text("v11.3.0", style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold
-                )
+                ))
               )
-            )
-
-            ],
+            ],),
           ),
-        ),
-      ),
       )
     );
   }
