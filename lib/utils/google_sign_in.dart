@@ -22,8 +22,8 @@ class _GoogleSignInState extends State<GoogleSignIn> {
   Widget build(BuildContext context) {
     final provider = context.watch<AppProvider>();
     return  !isLoading? SizedBox(
-      width: 400,
-      height: 50,
+      width: 200,
+      height: 40,
       child: OutlinedButton.icon(
         icon: const FaIcon(FontAwesomeIcons.google),
         onPressed: () async {

@@ -144,6 +144,23 @@ class _LoginScreen extends State<LoginScreen> {
               ),
               const SizedBox(height: 10),
 
+              RichText(
+                text: const TextSpan(
+                  children:[
+                    TextSpan(
+                      text: "- O -",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+                textAlign: TextAlign.center,
+              ),
+
+              const SizedBox(height: 10),
+
               const GoogleSignIn(),
 
               const SizedBox(height: 30),
@@ -173,7 +190,7 @@ class _LoginScreen extends State<LoginScreen> {
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 5),
 
               Transform.scale(
                 scale: 0.50,
