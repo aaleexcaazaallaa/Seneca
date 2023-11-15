@@ -106,7 +106,9 @@ class _LoginScreen extends State<LoginScreen> {
                   suffixIcon: SizedBox(
                     width: 55,
                     child: IconButton(
-                      icon: const Icon(Icons.visibility_outlined),
+                      icon: viewPassword
+                        ? const Icon(Icons.visibility_off_outlined)
+                        : const Icon(Icons.visibility_outlined),
                       color: Colors.white,
                       onPressed: () 
                       {
